@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Layout } from "antd";
+import { Button, Layout } from "antd";
+import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import Sidebar from "./components/Sidebar";
-import './App.css'
+import "./App.css";
 
 const { Sider, Header, Content } = Layout;
 
@@ -17,6 +18,13 @@ function App() {
         className="sider"
       >
         <Sidebar />
+
+        <Button
+          type="text"
+          icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+          onClick={() => setCollapsed(!collapsed)}
+          className="trigger-btn"
+        />
       </Sider>
       <Layout>
         <Header className="header"></Header>
