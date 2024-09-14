@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button, Layout } from "antd";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
 import Sidebar from "./components/Sidebar";
+import CustomHeader from "./components/Header";
 import "./App.css";
 
 const { Sider, Header, Content } = Layout;
@@ -27,7 +28,9 @@ function App() {
         />
       </Sider>
       <Layout>
-        <Header className="header"></Header>
+        <Header className="header">
+          <CustomHeader />
+        </Header>
         <Content className="content"></Content>
       </Layout>
     </Layout>
