@@ -46,7 +46,7 @@
 }
 
 /* header */
-.header-icon{
+.header-icon {
   background: #d2e3c8;
   padding: 8px;
   border-radius: 4px;
@@ -88,4 +88,26 @@
 
 .gray--color {
   color: rgb(182, 181, 181) !important;
+}
+
+/* plant lists */
+.plant-card {
+  flex: 1;
+  height: 250px;
+  text-align: center;
+}
+
+/* seller lists */
+.top-seller,
+.featured-seller {
+  flex: 1;
+}
+
+.divider {
+  border: 2px solid green;
+  height: 70px;
+}
+
+.card {
+  background-image: linear-gradient(to bottom, #4c7f79, #87e8de);
 }
